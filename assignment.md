@@ -85,7 +85,7 @@ git 명령에 익숙해지면 이 방법이 더 빠르다. 웹 방법과 섞어 
 #   macOS: brew install git gh
 #   Windows: git-scm.com 에서 Git, cli.github.com 에서 GitHub CLI 설치
 gh auth login            # GitHub.com → HTTPS → Yes → Login with a web browser
-git clone https://github.com/bing58qiz-hash/SentiFrame.git
+git clone https://github.com/shjoo0407/SentiFrame.git
 cd SentiFrame
 
 # 작업마다 (예: SW 멘티가 센서 데이터 불러오기 코드를 올릴 때)
