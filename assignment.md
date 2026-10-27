@@ -7,12 +7,12 @@
 ## 제출 흐름 한눈에 보기
 
 1. 내 브랜치를 만든다
-2. 내 폴더에 코드를 올린다
+2. HW 또는 SW 폴더에 코드를 올린다
 3. PR을 열고 멘토에게 리뷰를 요청한다
 4. 리뷰를 반영한다
 5. 승인(Approve)을 받으면 merge한다
 
-**main에는 직접 올리지 않습니다.** 모든 코드는 PR과 멘토 리뷰를 거쳐 main에 들어갑니다.
+**main에는 직접 올리지 않습니다.** 모든 코드는 PR과 리뷰를 거쳐 main에 들어갑니다.
 
 ## 처음 보는 용어
 
@@ -26,34 +26,23 @@
 
 ---
 
-## 0. 준비 (처음 한 번만)
-
-1. **GitHub 계정 만들기**: [github.com](https://github.com)에서 Sign up. 만든 아이디를 멘토에게 알려준다
-2. **초대 수락하기**: 멘토가 저장소에 초대하면 이메일이 온다. 메일의 **View invitation** → **Accept invitation**. 이 저장소는 비공개라서 초대를 수락해야 보인다
-3. **저장소 열기**: https://github.com/bing58qiz-hash/SentiFrame
-
 ## 1. 내 브랜치 만들기
 
-과제마다 새 브랜치를 하나 만든다.
+작업마다 새 브랜치를 하나 만든다.
 
 1. 저장소 첫 화면 왼쪽 위에서 `main`이라고 적힌 **브랜치 버튼**을 누른다
 2. 입력칸에 브랜치 이름을 적는다
-   - 형식: `분야/내아이디-과제번호`
-   - 예: `sw/hong123-hw1`, `hw/kim456-hw1`
-   - 영어 소문자, 숫자, `-`, `/`만 쓴다. 띄어쓰기는 안 된다
-3. 아래에 나오는 **Create branch: sw/hong123-hw1 from main**을 누른다
+   - 형식: hw/[수행내용], sw/[수행내용]
+3. 아래에 나오는 **Create branch: [branch_name] from main**을 누른다
 4. 브랜치 버튼에 내 브랜치 이름이 보이면 성공. **이후 작업은 항상 이 상태에서 한다**
 
 ## 2. 코드 올리기
 
-올리는 위치는 HW 멘티는 `HW/내아이디/`, SW 멘티는 `SW/내아이디/`이다.
-
-1. 내 컴퓨터에 `내아이디` 이름의 폴더를 만들고, 올릴 파일을 그 안에 넣는다
-2. 저장소에서 **브랜치 버튼이 내 브랜치인지 다시 확인**하고, `HW` 또는 `SW` 폴더를 누른다
-3. 오른쪽 위 **Add file** → **Upload files**
-4. 1에서 만든 폴더를 통째로 화면에 끌어다 놓는다. 파일 목록에 `내아이디/파일이름`으로 보이면 된다 (크롬이나 엣지 권장)
-5. 아래 **Commit changes** 칸에 무엇을 올렸는지 한 줄 적는다. 예: `1주차 과제: 데이터 불러오기 코드`
-6. **Commit directly to the `sw/hong123-hw1` branch**가 선택돼 있는지 확인하고 **Commit changes**를 누른다
+1. 저장소에서 **브랜치 버튼이 내 브랜치인지 다시 확인**하고, `HW` 또는 `SW` 폴더를 누른다
+2. 오른쪽 위 **Add file** → **Upload files**
+3. 올릴 파일을 화면에 끌어다 놓는다. 여러 개를 한 번에 놓아도 되고, 폴더째 놓으면 폴더 구조 그대로 올라간다 (크롬이나 엣지 권장)
+4. 아래 **Commit changes** 칸에 무엇을 올렸는지 한 줄 적는다. 예: `센서 데이터 불러오기 코드 추가`
+5. **Commit directly to the `[branch_name]` branch**가 선택돼 있는지 확인하고 **Commit changes**를 누른다
 
 ### 올리지 말 것
 
@@ -65,7 +54,7 @@
 
 1. 커밋하고 나면 화면 위에 노란 줄로 **Compare & pull request**가 보인다. 누른다
    - 안 보이면: **Pull requests** 탭 → **New pull request** → `base: main`, `compare: 내 브랜치` 선택
-2. 제목은 `[SW] 1주차 과제 - 홍길동` 형식으로 쓴다
+2. 제목은 `[SW] - {수행 내용}` 형식으로 쓴다
 3. 본문에 세 가지를 적는다
    - 무엇을 했나
    - 어떻게 확인했나 (실행 결과, 출력된 숫자)
@@ -75,25 +64,20 @@
 
 ## 4. 리뷰 반영하기
 
-멘토가 PR에 코멘트를 남기면 이메일 알림이 온다. PR의 **Files changed** 탭에서 코드 줄마다 달린 코멘트를 볼 수 있다.
-
 - **고친 파일은 같은 브랜치에 다시 올린다.** 2번과 같은 방법으로, 같은 위치에 같은 이름으로 올리면 덮어쓴다. 파일 하나를 조금만 고칠 때는 파일을 열고 연필 아이콘(Edit)으로 바로 고쳐도 된다
 - **PR은 새로 만들지 않는다.** 같은 브랜치에 커밋하면 열려 있는 PR에 자동으로 반영된다
 - 코멘트마다 무엇을 어떻게 고쳤는지 답글을 달고, 해결됐으면 **Resolve conversation**을 누른다
 - 다 고쳤으면 PR 대화창에 "리뷰 반영했습니다"라고 남긴다
 
 ## 5. 승인과 merge
-
 1. 멘토가 **Approve**하면 PR 아래 **Merge pull request** → **Confirm merge**를 누른다. **승인 전에는 merge하지 않는다**
 2. merge가 끝나면 **Delete branch**를 눌러 다 쓴 브랜치를 지운다
-
 ---
 
 ## 자주 막히는 곳
-
 - **저장소가 404로 보인다**: 초대를 아직 수락하지 않았거나, 다른 계정으로 로그인한 상태다
 - **파일이 main에 올라갔다**: 브랜치 버튼을 확인하지 않고 올린 것이다. 바로 멘토에게 알린다
-- **폴더째 끌어다 놓기가 안 된다**: `HW` 또는 `SW` 폴더에서 **Add file** → **Create new file**을 누르고, 파일 이름 칸에 `내아이디/README.md`라고 적어 커밋한다. 슬래시(`/`)를 쓰면 폴더가 만들어진다. 그다음 그 폴더 안으로 들어가 파일들을 끌어다 놓는다
+- **끌어다 놓기가 안 된다**: Upload files 화면의 **choose your files**를 눌러 파일을 직접 고른다
 - **Upload files나 Commit 버튼이 없다**: 쓰기 권한이 없는 상태다. 멘토에게 문의한다
 
 ## (선택) 터미널로 올리기
@@ -108,13 +92,13 @@ gh auth login            # GitHub.com → HTTPS → Yes → Login with a web bro
 git clone https://github.com/bing58qiz-hash/SentiFrame.git
 cd SentiFrame
 
-# 과제마다
+# 작업마다 (예: SW 멘티가 센서 데이터 불러오기 코드를 올릴 때)
 git switch main && git pull           # 최신 main 받기
-git switch -c sw/hong123-hw1          # 내 브랜치 만들기
-#   SW/hong123/ 에 파일을 넣은 뒤
-git add SW/hong123
-git commit -m "1주차 과제: 데이터 불러오기 코드"
-git push -u origin sw/hong123-hw1
+git switch -c sw/data-loader          # 내 브랜치 만들기: sw/[수행내용]
+#   SW 폴더에 파일을 넣은 뒤
+git add SW
+git commit -m "센서 데이터 불러오기 코드 추가"
+git push -u origin sw/data-loader
 gh pr create --base main --reviewer shjoo0407 --fill   # PR 열기 (웹에서 열어도 된다)
 ```
 
