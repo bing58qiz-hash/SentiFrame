@@ -1,0 +1,14 @@
+# 운영체제·편집기
+.DS_Store
+.vscode/
+.idea/
+
+# 파이썬
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.venv/
+venv/
+
+# 데이터 — 저장소에 올리지 않는다
+data/
