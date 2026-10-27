@@ -1,0 +1,16 @@
+# 운영체제·파이썬
+.DS_Store
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# 데이터 — 저장소에 올리지 않는다
+SW/sisfall/data/
+
+# 스크립트 실행 산출물 (다시 실행하면 생긴다)
+SW/sisfall/*.pkl
+SW/sisfall/*.npz
+SW/sisfall/*.pt
+SW/sisfall/*.onnx
+SW/sisfall/*.onnx.data
+SW/sisfall/results_*.csv
